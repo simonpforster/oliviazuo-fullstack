@@ -1,0 +1,32 @@
+#navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar a {
+    margin-right: 20px;
+    transition: color 0.2s ease;
+    width: 25%;
+}
+
+#navbar a:hover {
+    cursor: pointer;
+}
+
+#navbar a#home {
+    &[aria-current="page"], &:hover {
+        color: var(--home-color);
+    }
+}
+
+#navbar a#personal {
+    &[aria-current="page"], &:hover {
+        color: var(--personal-color);
+    }
+}
+
+#navbar a#commercial {
+    &[aria-current="page"], &:hover {
+        color: var(--commercial-color);
+    }
+}

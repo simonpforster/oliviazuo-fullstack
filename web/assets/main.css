@@ -1,0 +1,39 @@
+@font-face {
+    font-display: block;
+    font-family: "Font";
+    src: url("https://storage.googleapis.com/oliviazuo-portfolio/Font.woff2") format("woff2-variations");
+    font-style: normal;
+    font-weight: 200 1000;
+}
+
+:root {
+    --home-color: rgb(255, 59, 228);
+    --personal-color: rgba(29, 200, 177, 0.85);
+    --commercial-color: rgb(0, 0, 255);
+}
+
+body {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    font-family: 'Font', sans-serif;
+    margin: 20px;
+}
+
+a {
+    -webkit-text-stroke: 0.2rem #fff;
+    paint-order: markers stroke fill;
+    font-weight: 400;
+    margin: 0;
+    background-color: transparent;
+    text-decoration-line: none;
+    text-decoration-color: black;
+    color: inherit;
+
+    &:hover {
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-color: inherit;
+        text-underline-offset: 0.1rem;
+    }
+}
